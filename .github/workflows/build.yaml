@@ -1,5 +1,4 @@
 name: Build
-
 on:
   push:
     branches: [main]
@@ -15,6 +14,8 @@ jobs:
 
       - name: Set up Spack
         uses: spack/setup-spack@v2
+        with:
+          buildcache: false
 
       - name: Install
         env:
