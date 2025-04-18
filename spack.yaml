@@ -1,6 +1,6 @@
 spack:
   specs:
-  - gmake
+    - gmake
   view: false
   config:
     install_tree:
@@ -11,7 +11,7 @@ spack:
       granularity: generic
   mirrors:
     local-buildcache:
-      url: oci://ghcr.io/pranav-sivaraman/spack-buildcache
+      url: oci://ghcr.io/pranav-sivaraman/spack-universe
       binary: true
       signed: false
       access_pair:
