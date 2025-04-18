@@ -1,0 +1,20 @@
+spack:
+  specs:
+  - gmake
+  view: false
+  config:
+    install_tree:
+      root: /opt/spack
+      padded_length: 128
+  concretizer:
+    targets:
+      granularity: generic
+  mirrors:
+    local-buildcache:
+      url: oci://ghcr.io/pranav-sivaraman/spack-buildcache
+      binary: true
+      signed: false
+      access_pair:
+        id_variable: GITHUB_USER
+        secret_variable: GITHUB_TOKEN
+      autopush: true
