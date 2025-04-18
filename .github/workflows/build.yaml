@@ -5,7 +5,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: quay.io/pypa/manylinux_2_34_x86_64
+    container: quay.io/pypa/manylinux2014_x86_64
     permissions:
       packages: write
     steps:
